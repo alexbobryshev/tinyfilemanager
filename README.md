@@ -9,6 +9,18 @@
 
 > TinyFileManager is web based PHP file manager and it is a simple, fast and small size in single-file PHP file that can be dropped into any folder on your server, multi-language ready web application for storing, uploading, editing and managing files and folders online via web browser. The Application runs on PHP 5.5+, It allows the creation of multiple users and each user can have its own directory and a build-in support for managing text files with cloud9 IDE and it supports syntax highlighting for over 150+ languages and over 35+ themes.
 
+## Modifications
+
+1. Support 'public direct links' which are available when users directories are out of wwwroot. Access to links is provided by 'public token' for each user, so it is possible to provide link to any file without authentication.
+All links include view, edit, etc, are using public direct links
+
+2. Archive on-the-fly support: create tar.gz, tar, zip with direct output to HTTP, without temporary file
+
+3. Files download via public direct link with HTTP range support
+
+4. Work in local network without internet: all necessary resources (js libraries, web fonts, etc) were downloaded locally and links were changed
+
+
 ## Demo
 
 [Demo](https://tinyfilemanager.github.io/demo/)
